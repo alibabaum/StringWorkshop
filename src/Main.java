@@ -23,17 +23,29 @@ public class Main {
         while (option <= 7) {
             if (option == 1) {
                 System.out.println("Your new string is: " + addContent(firstString));
+                System.out.println("Please choose another option: ");
+                option = inScanner.nextInt();
             } else if (option == 2) {
                 substringChecker(firstString);
+                System.out.println("Please choose another option: ");
+                option = inScanner.nextInt();
             } else if (option == 3) {
                 System.out.println("Your string length is: " + lengthChecker(firstString));
+                System.out.println("Please choose another option: ");
+                option = inScanner.nextInt();
             } else if (option == 4) {
                 afterPrefix2(firstString);
+                System.out.println("Please choose another option: ");
+                option = inScanner.nextInt();
             } else if (option == 5) {
                 beforeSuffix(firstString);
+                System.out.println("Please choose another option: ");
+                option = inScanner.nextInt();
             } else if (option == 6) {
                 betweenPrefixSuffix(firstString);
                 System.out.println(" ");
+                System.out.println("Please choose another option: ");
+                option = inScanner.nextInt();
             } else if (option == 7){
                 System.out.println("Bye.");
                 option = 8;
